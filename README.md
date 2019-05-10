@@ -29,9 +29,16 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
 
+  - Server-side routing involves a client retrieving individual documents one by one which are stored on the server. Client-side routing involves all of those documents being retrieved all at once and loading them dynamically as they are needed by the client.
+
+- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+  - The, “post” method is responsible for the create, or ‘C’, in CRUD. Using this request, the client directs the server to create or store new information. The, “get” method is responsible for the read or, “R” in CRUD. Using this request, the client requests new information from the server. The, “put” method is responsible for the update or, “U” in CRUD. Using this request, the client directs that information already stored on the server be updated. The, “delete” method is responsible for the delete or, “D” in crud. Using this request, the client requests that the server deletes information.
+
+* [ ] Mention three tools we can use to make AJAX requests.
+
+  - The Axios and jQuery libraries and the fetch Javascript method are three tools used to make AJAX requests.
 
 ## Project Set Up
 
@@ -53,9 +60,10 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into master.
+
 ## Minimum Viable Product
 
 The MVP of this project will be broken up between 2 stages. Follow each step and be sure to use your design/style skills to make this application look professional.
@@ -109,15 +117,15 @@ Add a Router to this application by using React Router.
 // output: `A list of all the smurfs in the Smurf DB will be returned`
 [
   {
-    name: 'Brainy',
+    name: "Brainy",
     age: 211,
-    height: '5cm',
+    height: "5cm",
     id: 0
   },
   {
-    name: 'Smurfette',
+    name: "Smurfette",
     age: 122,
-    height: '12cm',
+    height: "12cm",
     id: 1
   }
 ];
