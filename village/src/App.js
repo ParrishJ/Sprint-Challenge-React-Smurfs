@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { BrowswerRouter as Router, Route } from "react-router-dom";
+import { BrowswerRouter as Router, Route, NavLink } from "react-router-dom";
 
 import "./App.css";
 import SmurfForm from "./components/SmurfForm";
 import Smurfs from "./components/Smurfs";
+import NavBar from "./components/NavBar";
+import FooterNav from "./components/FooterNav";
 
 class App extends Component {
   constructor(props) {
@@ -41,6 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavBar />
         <Route
           exact
           path="/smurf-form"
@@ -51,6 +54,7 @@ class App extends Component {
           path="/"
           render={props => <Smurfs {...props} smurfs={this.state.smurfs} />}
         />
+        <FooterNav />
       </div>
     );
   }
